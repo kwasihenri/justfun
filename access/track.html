@@ -1,0 +1,441 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Courier DEPRIXA-Integral Web System">
+	<meta name="author" content="Jaomweb">
+	<meta name="description" content="">
+	<!-- For IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- For Resposive Device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- For Window Tab Color -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#fff">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<title>Track Shipment Result | Ship Savvy Logistics</title>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/uploads/favicon.png">
+    <!-- Bootstrap -->
+    <link href="assets/css_main_deprixa/main_deprixa/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="assets/css_main_deprixa/main_deprixa/css/materialdesignicons.min.css" rel="stylesheet" type="text/css" /> 
+    <!-- Main css --> 
+    <link href="assets/css_main_deprixa/main_deprixa/css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/css_main_deprixa/css/styles.css">
+	<link rel="stylesheet" href="assets/css_main_deprixa/css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="assets/css_main_deprixa/main.css">
+	<link rel="stylesheet" href="assets/css_main_deprixa/themify-icons.css">
+	<link rel="stylesheet" href="assets/custom_dependencies/track_online_shopping.css">
+
+
+
+	<script>
+		function mostrarMensaje(id) {
+			var popup = document.getElementById("myPopup_" + id);
+			popup.classList.toggle("show");
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<!-- Loader -->
+	<div id="preloader">
+		<div id="status">
+			<div class="spinner">
+				<div class="double-bounce1"></div>
+				<div class="double-bounce2"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Loader -->
+
+	<!-- Navbar STart -->
+	<header id="topnav" class="defaultscroll sticky">
+		<div class="container">
+			<!-- Logo container-->
+			<div>
+				<a class="logo" href="index.php"><img src="assets/uploads/logo.png" alt="Ship Savvy Logistics"  width="190" height="45"/></a>
+			</div>
+			<div class="buy-button">
+				<a href="sign-up.php" class="btn btn-soft-secondary"><i class="mdi mdi-account-alert ml-3 icons"></i> Register</a>
+			</div>
+			<!--end login button-->
+			<div class="menu-extras">
+				<div class="menu-item">
+					<!-- Mobile menu toggle-->
+					<a class="navbar-toggle">
+						<div class="lines">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</a>
+					<!-- End mobile menu toggle-->
+				</div>
+			</div>
+			<div id="navigation">
+				<!-- Navigation Menu-->
+				<ul class="navigation-menu">
+					<li><a href="index.php">Home</a></li>
+
+					<li><a href="tracking.php"><i class="mdi mdi-package-variant-closed"></i> Tracking</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Navbar End -->
+
+
+	<!-- ERROR PAGE -->
+	<section class="bg-home">
+		<div class="home-center">
+			<div class="home-desc-center">
+				<div class="container">
+					<div class="checkout-form">
+						<div class="row">
+							
+								<div class="col-lg-7">
+									<div class="user-profile-data">
+
+										<br><br><br>
+										<div class="row">
+											<!-- <div class="col-md-3">
+												<div class="trackstatus-title">
+													<p><span class="ti-package align-top" style="font-size: 30px;"></span> <b>Pending payment</b></p>
+													<label> </label>
+												</div>
+											</div> -->
+											<div class="col-md-5">
+												<div class="trackstatus-title">
+													<label>Track Shipment <b>AWB38218003</b></label>
+												</div>
+											</div>
+
+											<div class="col-md-2">
+												<div class="trackstatus-title">
+
+													<a class="btn btn-success btn-sm  rounded" target="blank" href="print_inv_ship_track.html?id=3"><i style="color:white" class="ti-printer"></i>&nbsp;Print Shipment</a>
+
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+										<div class="payment-wrap">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="track-title">
+														<h5 class="form_sub" style="background-color: #2eca8b; color:white">Photo delivered</h5>
+													</div>
+												</div>
+
+																							</div>
+
+
+										</div>
+
+
+
+
+
+
+
+
+										
+
+										<!-- General Information -->
+										<div class="payment-wrap">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="track-title">
+														<h5 class="form_sub" style="background-color: #2eca8b; color:white">SENDER / ORIGIN</h5>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="track-title">
+														<span class="ti-location-pin align-top" style="font-size: 30px;"></span> <label>City collection</br> <b>United Kingdom</b></label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="track-title">
+														<span class="ti-location-pin align-top" style="font-size: 30px;"></span> <label>Origin city</br> <b>London</b></label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="track-title">
+														<span class="ti-calendar align-top" style="font-size: 30px;"></span> <label>Shipping date</br> <b>2025-06-30</b></label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<div class="track-title">
+															<span class="ti-timer align-top" style="font-size: 30px;"></span> <label>Shipping time</br> <b>DHL 7-10 DAYS</b></label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="track-title">
+														<label>Contact name</br> <b>Kalya Steven</b></label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<div class="track-title">
+															<span class="ti-direction-alt align-top" style="font-size: 30px;"></span> <label>Contact address</br> <b>London</b></label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="track-title">
+														<label>Shipping quantity</br> <b>2</b></label>
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="form-group">
+														<div class="track-title">
+															<label>Total weight (kgs)</br> <b>40</b></label>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<!--// General Information -->
+
+										<!-- track shipment -->
+										<div class="payment-wrap">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="track-title">
+														<h5 class="form_sub" style="background-color: #2eca8b; color:white">RECIPIENT / DESTINATION</h5>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="track-title">
+														<span class="ti-location-pin align-top" style="font-size: 30px;"></span> <label>Delivery city</br> <b>Lynnwood, WA 98087 USA</b></label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="track-title">
+														<span class="ti-location-pin align-top" style="font-size: 30px;"></span> <label>Destination city</br> <b>Lynnwood, WA 98087 USA</b></label>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="track-title">
+														<span class="ti-calendar align-top" style="font-size: 30px;"></span> <label>Shipping time</br> <b>DHL 7-10 DAYS</b></div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<div class="track-title">
+															<span class="ti-timer align-top" style="font-size: 30px;"></span> <label>Delivery time</br> <b>2025-05-28 00:00:00</b></label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													<div class="track-title">
+
+														<label>Contact name</br> <b>Robert Paz</b></label>
+
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<div class="track-title">
+															<span class="ti-direction-alt align-top" style="font-size: 30px;"></span> <label>Contact address</br> <b>14500 Admiralty Way Apt. G-203</b></label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div> <!-- /.user-profile-data -->
+								</div> <!-- /.col- -->
+
+							
+															<div class="col-lg-5">
+									<br><br><br>
+									<div class="booking-summary_block">
+										<div class="booking-summary-box">
+											<h5>Shipping history</h5>
+																							<div class="track-cost">
+													<ul class="timeline a">
+														<li class="event">
+															<div class="row">
+																<div class="col-md-7">
+																	<p class="text-left">2025/06/30</p>
+																	<h6 class="text-left">In Transit																		<br>
+																		
+																	</h6>
+																	<button class="popup button4" onclick="mostrarMensaje('10')">+ Comments																		<span class="popuptext" id="myPopup_10">Shipping created</span>
+																	</button>
+																</div>
+																<div class="col-md-5">
+																	<p class="text-right">04:23:04 pm</p>
+																	<h4></h4>
+																</div>
+															</div>
+														</li>
+														<!--event schedule 1 end-->
+													</ul>
+												</div>
+											<div class="hideme" style="display: none;">
+												<div class="track-cost">
+													<ul class="timeline a">
+														<li class="event">
+															<div class="row">
+																<div class="col-md-7">
+																	<p class="text-left">2025/06/30</p>
+																	<h6 class="text-left">In Transit																		<br>
+																		Brazil, Brasilla
+																	</h6>
+																	<button class="popup button4" onclick="mostrarMensaje('11')">+ Comments																		<span class="popuptext" id="myPopup_11">ARRIVED AT SSAVY DELIVERY FACILITY AND IN TRASIT TO FINAL DESTINATION</span>
+																	</button>
+																</div>
+																<div class="col-md-5">
+																	<p class="text-right">12:54:03 am</p>
+																	<h4></h4>
+																</div>
+															</div>
+														</li>
+														<!--event schedule 1 end-->
+													</ul>
+												</div>
+																							<div class="track-cost">
+													<ul class="timeline a">
+														<li class="event">
+															<div class="row">
+																<div class="col-md-7">
+																	<p class="text-left">2025/05/30</p>
+																	<h6 class="text-left">In Transit																		<br>
+																		Mexico, Mexico City
+																	</h6>
+																	<button class="popup button4" onclick="mostrarMensaje('12')">+ Comments																		<span class="popuptext" id="myPopup_12">ARRIVED AT CUSTOM FACILITY IN TRANSIT TOFINAL DESTINATION</span>
+																	</button>
+																</div>
+																<div class="col-md-5">
+																	<p class="text-right">06:21:37 am</p>
+																	<h4></h4>
+																</div>
+															</div>
+														</li>
+														<!--event schedule 1 end-->
+													</ul>
+												</div>
+																							<div class="track-cost">
+													<ul class="timeline a">
+														<li class="event">
+															<div class="row">
+																<div class="col-md-7">
+																	<p class="text-left">2025/05/30</p>
+																	<h6 class="text-left">Customs Duty Check in Progress																		<br>
+																		Mexico, Mexico City
+																	</h6>
+																	<button class="popup button4" onclick="mostrarMensaje('13')">+ Comments																		<span class="popuptext" id="myPopup_13">TAX AND DUTY IS ADVISED</span>
+																	</button>
+																</div>
+																<div class="col-md-5">
+																	<p class="text-right">02:29:56 pm</p>
+																	<h4></h4>
+																</div>
+															</div>
+														</li>
+														<!--event schedule 1 end-->
+													</ul>
+												</div>
+																							<div class="track-cost">
+													<ul class="timeline a">
+														<li class="event">
+															<div class="row">
+																<div class="col-md-7">
+																	<p class="text-left">2025/05/31</p>
+																	<h6 class="text-left">Pending payment																		<br>
+																		Mexico, Mexico City
+																	</h6>
+																	<button class="popup button4" onclick="mostrarMensaje('14')">+ Comments																		<span class="popuptext" id="myPopup_14">PACKAGE ON HOLD   
+AWAITING TAX AND DUTY PAYMENT</span>
+																	</button>
+																</div>
+																<div class="col-md-5">
+																	<p class="text-right">07:56:44 am</p>
+																	<h4></h4>
+																</div>
+															</div>
+														</li>
+														<!--event schedule 1 end-->
+													</ul>
+												</div>
+											</div>
+																																										</div>
+									</div>
+								</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.checkout-form -->
+				</div> <!-- /.container -->
+			</div>
+		</div>
+	</section>
+
+	
+	<!-- ERROR PAGE -->
+
+	<!-- Back to top -->
+	<a href="#" class="back-to-top rounded text-center" id="back-to-top">
+		<i class="mdi mdi-chevron-up d-block"> </i>
+	</a>
+	<!-- Back to top -->
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!-- jQuery -->
+	<script src="assets/vendor/jquery.2.2.3.min.js"></script>
+	<!-- Popper js -->
+	<script src="assets/vendor/popper.js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!-- menu  -->
+	<script src="assets/vendor/mega-menu/assets/js/custom.js"></script>
+	
+	<!-- js ui -->
+	<script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+	<script src="assets/css_main_deprixa/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/css_main_deprixa/js/jquery.easing.min.js"></script>
+	<script src="assets/css_main_deprixa/js/scrollspy.min.js"></script>
+	<!-- Main Js -->
+	<script src="assets/css_main_deprixa/js/app.js"></script>
+
+
+	<!-- Theme js -->
+	<script src="assets/css_main_deprixa/js/theme.js"></script>
+
+	</div> <!-- /.main-page-wrapper -->
+</body>
+
+</html>
